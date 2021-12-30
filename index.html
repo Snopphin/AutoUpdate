@@ -3,8 +3,12 @@
  <body>
 <?php
   
-if (empty($_POST)) {
-echo "test";
+$method = $_SERVER['REQUEST_METHOD'];
+
+switch ($method) {
+  case 'POST':
+    echo "test";
+    break;
 }
 ?>
 
